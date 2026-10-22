@@ -1,273 +1,227 @@
 # Billing Software
 
-A complete desktop billing software application built with Electron, React, SQLite, and Tailwind CSS.
+A complete desktop billing, GST invoicing, and inventory management software built with **Electron**, **React**, **SQLite**, and **Tailwind CSS**.
 
-> **Important:** This is proprietary software owned by Yukti Tech Solution. It is not open source. Use is limited to licensed customers and partners. For licensing or purchase, contact https://yuktitechsolution.co.in/ or email yuktitechsolution@gmail.com.
+> **Important:** This is proprietary software owned by **Yukti Tech Solution**. It is not open source. Access and usage are strictly limited to licensed customers and partners. For licensing or purchasing, contact [https://yuktitechsolution.co.in/](https://yuktitechsolution.co.in/) or email [yuktitechsolution@gmail.com](mailto:yuktitechsolution@gmail.com).
 
-## Features
+---
 
-- **Dashboard**: View sales statistics, pending payments, and recent invoices
-- **Company Settings**: Manage company details and logo
-- **Product Management**: Add, edit, delete, and search products
-- **Customer Management**: Add, edit, delete, and search customers
-- **Invoice Creation**: Create invoices with automatic calculations
-- **Invoice History**: View, filter, edit, and delete invoices
-- **Invoice Preview & Print**: Professional invoice preview with print and PDF export
-- **PDF Generation**: Export invoices as PDF files (automatically organized by month-year)
-- **Organized File Storage**: Invoices saved to `data/bills/[month-year]/` folder structure
-- **Local Database**: SQLite database for offline data storage
-- **Test Login System**: Built-in test credentials for demo/testing
+## 📸 User Interface Screenshots
 
-## Technology Stack
+### 1. Analytics & Executive Dashboard
+Real-time sales performance, monthly trends, pending invoices tracking, and quick management links:
 
-- **Electron**: Desktop application framework
-- **React**: Frontend framework
-- **SQLite (better-sqlite3)**: Local database
-- **Tailwind CSS**: Styling
-- **Vite**: Build tool
-- **React Router**: Navigation
-- **jsPDF**: PDF generation
-- **date-fns**: Date formatting
-- **react-toastify**: Notifications
+![Billing Software Dashboard](docs/screenshots/dashboard.jpg)
 
-## Prerequisites
+### 2. GST Invoice Generator & Billing Workspace
+Automated HSN/SAC code handling, dynamic tax calculation (CGST / SGST / IGST), customer selector, and instant PDF/Print generation:
 
-- Node.js (v18 or higher) - Recommended: v18 LTS or v20 LTS
-- npm (comes with Node.js)
-- **Windows Users**: Visual Studio Build Tools with Windows SDK (required for better-sqlite3)
+![GST Invoice Creation Screen](docs/screenshots/invoice_create.jpg)
 
-## Quick Start (Windows)
+---
 
-**Easiest way to run the project:**
+## 🚀 Key Features
 
-1. Double-click `run-project.bat`
-   - This will automatically check for Node.js
-   - Install all dependencies if needed
-   - Create necessary folders
-   - Start the application
-   - Use `run-project.bat --force-install` if you want to reinstall dependencies
+- **Executive Dashboard**: Real-time sales statistics (daily, monthly, yearly), cash flow tracking, pending balance monitoring, and recent transactions.
+- **GST Invoice Creation**: Intuitive invoice composer with automatic HSN/SAC lookups, rate calculation, dynamic GST percentages, discounts, and auto-generated amount in words.
+- **Invoice Preview & Print**: Professional GST invoice template with company logo, tax breakdowns, direct Electron printing, and instant PDF download.
+- **Organized Storage**: Invoices are cleanly auto-saved to organized monthly folders: `data/bills/[MM-YYYY]/[INV-NO].pdf`.
+- **Customer Management**: Add, search, view transaction histories, edit, and organize client contact records and GSTIN details.
+- **Product & Inventory Management**: Manage catalog items, pricing, HSN codes, tax brackets, and available stock levels.
+- **Company Settings**: Configure business details, address, state codes, GSTIN, and custom branding logo.
+- **Offline-First SQLite Database**: Lightning-fast offline reliability using `better-sqlite3` — zero latency and local data safety.
+- **License & Auth System**: Built-in test credential support, activation key management, and cloud/Firebase synchronization options.
 
-That's it! The BAT file handles everything automatically.
+---
 
-## Manual Installation
+## 🛠️ Technology Stack
 
-### Windows Users - IMPORTANT
+| Layer | Technologies |
+|---|---|
+| **Desktop Shell** | Electron 28 |
+| **Frontend UI** | React 18, React Router v6 |
+| **Styling** | Tailwind CSS 3, PostCSS |
+| **Local Database** | SQLite via `better-sqlite3` |
+| **Bundler & Tooling** | Vite 5 |
+| **PDF & Export** | jsPDF, jsPDF-AutoTable |
+| **Cloud Sync & Auth** | Firebase 10 (Optional) |
+| **Utilities** | date-fns, react-toastify |
 
-**Before installing dependencies, you MUST install Windows SDK:**
+---
 
-1. **Open Visual Studio Installer**
-   - Search for "Visual Studio Installer" in Windows Start menu
-   - Or download from: https://visualstudio.microsoft.com/downloads/
+## 📋 System Prerequisites
 
-2. **Modify Visual Studio 2019 Build Tools**
-   - Click "Modify" on Visual Studio 2019 Build Tools
-   - Go to "Individual components" tab
-   - Search for "Windows SDK"
-   - Select "Windows 10 SDK (10.0.19041.0)" or newer
-   - Click "Modify" to install
+- **Node.js**: v18 LTS or v20 LTS (Recommended: Node.js 20.x)
+- **Package Manager**: npm (bundled with Node.js)
+- **Windows Users**: Visual Studio Build Tools with **Windows 10/11 SDK** (required for compiling native `better-sqlite3` bindings).
 
-3. **After Windows SDK is installed, run:**
-   ```bash
-   npm install
-   ```
+---
 
-### All Platforms
+## ⚡ Quick Start (Windows)
 
-1. Clone the repository or extract the project files
+The simplest and fastest way to start on Windows:
 
-2. Install dependencies:
+1. Double-click **`run-project.bat`** in the project root folder.
+2. The script will automatically:
+   - Check Node.js and environment prerequisites
+   - Install dependencies if missing
+   - Verify native bindings
+   - Launch Vite development server on port `5180` and start the Electron desktop window.
+
+*(Use `run-project.bat --force-install` if you ever need to clean-reinstall all dependencies).*
+
+---
+
+## 💻 Manual Setup & Installation
+
+### Step 1: Windows C++ Build Tools (Windows Users)
+Before installing packages, ensure the Windows SDK is present:
+1. Open **Visual Studio Installer** from your Windows Start Menu.
+2. Click **Modify** next to *Visual Studio Build Tools* (or *Visual Studio Community*).
+3. Under the **Individual components** tab, search for and check **Windows 10 SDK** (or **Windows 11 SDK**).
+4. Click **Modify** to complete the installation.
+
+### Step 2: Clone & Install Dependencies
 ```bash
+# Clone the repository
+git clone https://github.com/Yukti-Tech-Solution/General-Billing-Software.git
+cd General-Billing-Software
+
+# Install project dependencies
 npm install
 ```
 
-**Note**: If `better-sqlite3` installation fails on Windows, ensure Windows SDK is installed (see above).
+> **Note on Native Modules:** If `better-sqlite3` fails to compile, run:
+> ```bash
+> npm run rebuild
+> ```
 
-## Running the Application
+---
 
-### Option 1: Use the BAT file (Windows - Recommended)
-```bash
-run-project.bat
-```
+## 🏃 Running the Application
 
-### Option 2: Manual start
+### Development Mode
 ```bash
 npm run electron-dev
 ```
+This starts:
+- Vite development server on `http://localhost:5180`
+- Electron shell with Hot Module Replacement (HMR) and DevTools enabled.
 
-This command will:
-- Start the Vite development server
-- Launch Electron window
-- Enable hot module replacement
+---
 
-## Building for Production
+## 🔑 Demo & Test Credentials
 
-1. Build the React app:
+The system includes preconfigured demo accounts for evaluating features:
+
+| Role | Email | Password | Access Level |
+|---|---|---|---|
+| **Administrator** | `vaibhavwaghalkar2@gmail.com` | `admin123` | Full Unlimited Access |
+| **Test User** | `test@yuktitechsolution.com` | `test123` | Unlimited Access |
+| **Demo Account** | `demo@demo.com` | `demo123` | Trial / Standard Access |
+
+*Tip: Press `Ctrl + Shift + L` inside the application to toggle Administrator Mode for license management.*
+
+---
+
+## 📦 Building for Production
+
+To generate distributable desktop installers:
+
 ```bash
+# 1. Build frontend bundle
 npm run build
-```
 
-2. Create distribution packages:
-
-For Windows:
-```bash
+# 2. Package for Windows (.exe installer)
 npm run dist:win
-```
 
-For macOS:
-```bash
+# Or package for macOS / Linux:
 npm run dist:mac
-```
-
-For Linux:
-```bash
 npm run dist:linux
 ```
 
-Or build for all platforms:
-```bash
-npm run dist
-```
+All compiled binaries will be output to the `dist/` folder.
 
-The built installers will be in the `dist` folder.
+---
 
-## Project Structure
+## 📂 Project Architecture
 
 ```
-├── electron/
-│   ├── main.js          # Electron main process
-│   └── preload.js       # Electron preload script
-├── src/
-│   ├── components/      # React components
-│   │   ├── Sidebar.jsx
+billing-software/
+├── docs/                     # Documentation assets and screenshots
+│   └── screenshots/          # UI previews (dashboard, invoice, etc.)
+├── electron/                 # Electron main process
+│   ├── main.js               # IPC handlers, window lifecycle & SQLite setup
+│   └── preload.js            # Secure contextBridge API bindings
+├── src/                      # React frontend source
+│   ├── components/           # Reusable UI components
+│   │   ├── CustomerForm.jsx
 │   │   ├── Header.jsx
 │   │   ├── InvoicePreview.jsx
+│   │   ├── LicenseActivation.jsx
+│   │   ├── LoginScreen.jsx
 │   │   ├── ProductForm.jsx
-│   │   └── CustomerForm.jsx
-│   ├── pages/           # Page components
-│   │   ├── Dashboard.jsx
-│   │   ├── CreateInvoice.jsx
-│   │   ├── InvoiceHistory.jsx
-│   │   ├── Products.jsx
-│   │   ├── Customers.jsx
-│   │   └── Settings.jsx
-│   ├── database/        # Database operations
+│   │   └── Sidebar.jsx
+│   ├── database/             # SQLite schema and query abstraction
 │   │   ├── db.js
 │   │   └── schema.js
-│   ├── utils/           # Utility functions
+│   ├── firebase/             # Firebase cloud integration & license checks
+│   │   ├── config.js
+│   │   └── licenseService.js
+│   ├── pages/                # Application views
+│   │   ├── CreateInvoice.jsx
+│   │   ├── Customers.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── InvoiceHistory.jsx
+│   │   ├── LicenseManagement.jsx
+│   │   ├── Products.jsx
+│   │   └── Settings.jsx
+│   ├── utils/                # Calculations, PDF generator & helpers
 │   │   ├── calculations.js
+│   │   ├── numberToWords.js
 │   │   ├── pdfGenerator.js
-│   │   └── numberToWords.js
-│   ├── App.jsx          # Main app component
-│   ├── index.jsx        # React entry point
-│   └── index.css        # Global styles
-├── public/              # Static files
-│   ├── index.html
-│   └── icon.png
-├── package.json
-├── vite.config.js
-├── tailwind.config.js
-└── README.md
+│   │   └── testCredentials.js
+│   ├── App.jsx               # Application routes and license state
+│   ├── index.jsx             # React DOM root
+│   └── index.css             # Tailwind base styles
+├── .env.example              # Environment variables template
+├── run-project.bat           # Automated 1-click startup batch script
+├── package.json              # App configuration and scripts
+├── vite.config.js            # Vite build configuration
+└── tailwind.config.js        # Tailwind CSS theme configuration
 ```
 
-## Database Schema
+---
 
-### Companies
-- id, name, phone, address, gstin, logo, created_at
+## 🗄️ Database Structure
 
-### Customers
-- id, name, phone, address, gstin, created_at
+The local SQLite database stores data under `%APPDATA%/billing-software/billing.db` (Windows):
 
-### Products
-- id, name, description, price, hsn_code, tax_rate, stock, created_at
+- **`companies`**: Profile details, address, contact, GSTIN, and custom logo.
+- **`customers`**: Client directories, contact numbers, billing addresses, and GSTIN.
+- **`products`**: Item names, descriptions, unit rates, HSN codes, tax rates, and inventory stock.
+- **`invoices`**: Sequential invoice numbers (`INV-YYYY-###`), customer references, date, tax summaries, discounts, paid amounts, balance, and notes.
+- **`invoice_items`**: Line items linked to invoices with quantities, unit rates, and totals.
+- **`licenses`**: Activation status, hardware keys, expiry dates, and subscription info.
 
-### Invoices
-- id, invoice_number, customer_id, date, subtotal, discount_percentage, discount_amount, tax_amount, total, paid_amount, balance, status, notes, created_at
+---
 
-### Invoice Items
-- id, invoice_id, product_id, quantity, price, amount
+## 📄 License
 
-## Usage
+**Proprietary License** — © 2025–2026 **Yukti Tech Solution**. All rights reserved.
 
-1. **Login**: Use test credentials (see login screen for details)
-   - Admin: `vaibhavwaghalkar2@gmail.com` / `admin123`
-   - Test: `test@yuktitechsolution.com` / `test123`
-   - Demo: `demo@demo.com` / `demo123`
+Unauthorized copying, modification, reverse engineering, redistribution, or public deployment of this software is strictly prohibited without prior written agreement from Yukti Tech Solution.
 
-2. **Setup Company**: Go to Settings and add your company details
+See [LICENSE.txt](file:///d:/Programming/Yukti%20Tech%20Solution/Billing%20Software/LICENSE.txt) for full terms.
 
-3. **Add Products**: Navigate to Products and add your products
+---
 
-4. **Add Customers**: Navigate to Customers and add your customers
+## 📞 Support & Inquiries
 
-5. **Create Invoice**: Go to Create Invoice, select customer, add items, and save
-
-6. **View Invoices**: Check Invoice History to view, edit, or delete invoices
-
-7. **Print/Export**: 
-   - **Print**: Click Print button in invoice preview (uses Electron print dialog)
-   - **Download PDF**: Click Download PDF button - files are automatically saved to `data/bills/[month-year]/` folder
-   - Example: Invoice from December 2025 → `data/bills/12-2025/INV-2025-001.pdf`
-
-## Invoice Number Format
-
-Invoices are automatically numbered in the format: `INV-YYYY-001`
-- INV: Invoice prefix
-- YYYY: Current year
-- 001: Sequential number (resets each year)
-
-## Features in Detail
-
-### Dashboard
-- Today's sales, monthly sales, yearly sales
-- Total invoices count
-- Pending payments
-- Recent invoices list
-- Quick action buttons
-
-### Invoice Creation
-- Customer selection with search
-- Product selection with search
-- Real-time calculations
-- Discount (percentage or flat amount)
-- Tax calculation based on product tax rates
-- Payment tracking
-- Notes/terms section
-
-### Invoice Preview
-- Professional GST invoice format
-- Company logo and details
-- Customer details
-- Itemized list
-- Tax breakdown
-- Amount in words
-- Print and PDF export
-
-## Troubleshooting
-
-### Database Issues
-If you encounter database errors, the database file is stored in the user data directory. You can delete it to start fresh (all data will be lost).
-
-### Build Issues
-If you encounter build issues with better-sqlite3:
-- Windows: Install windows-build-tools
-- macOS: Install Xcode Command Line Tools
-- Linux: Install build-essential
-
-### Electron Issues
-If Electron doesn't start:
-- Make sure all dependencies are installed
-- Check that the dev server is running on port 5173
-- Check the console for errors
-
-## License
-
-Proprietary software owned by Yukti Tech Solution. All rights reserved. No redistribution or public use is allowed without a written license agreement. For licensing or purchase, contact https://yuktitechsolution.co.in/ or email yuktitechsolution@gmail.com.
-
-## Support
-
-For issues, licensing, or purchasing, contact yuktitechsolution@gmail.com or visit https://yuktitechsolution.co.in/.
-
-## Version
-
-1.0.0
-
+- **Official Website**: [https://yuktitechsolution.co.in/](https://yuktitechsolution.co.in/)
+- **Email Contact**: [yuktitechsolution@gmail.com](mailto:yuktitechsolution@gmail.com)
+- **Documentation Guides**:
+  - [ENV_SETUP.md](file:///d:/Programming/Yukti%20Tech%20Solution/Billing%20Software/ENV_SETUP.md) — Firebase configuration guide
+  - [QUICK_START.md](file:///d:/Programming/Yukti%20Tech%20Solution/Billing%20Software/QUICK_START.md) — 5-minute setup walkthrough
+  - [TROUBLESHOOTING.md](file:///d:/Programming/Yukti%20Tech%20Solution/Billing%20Software/TROUBLESHOOTING.md) — Resolving build and runtime issues
+  - [FIREBASE_SETUP.md](file:///d:/Programming/Yukti%20Tech%20Solution/Billing%20Software/FIREBASE_SETUP.md) — Cloud licensing and sync setup

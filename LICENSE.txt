@@ -1,24 +1,42 @@
-Proprietary License - Yukti Tech Solution
+PROPRIETARY COMMERCIAL SOFTWARE LICENSE AGREEMENT
 
-Copyright (c) 2025 Yukti Tech Solution. All rights reserved.
+Copyright (c) 2025-2026 Yukti Tech Solution. All rights reserved.
 
-This software is proprietary and confidential. Unauthorized copying,
-modification, distribution, or use of this software, in whole or in part,
-is strictly prohibited without prior written consent from Yukti Tech
-Solution.
+IMPORTANT: PLEASE READ THIS SOFTWARE LICENSE AGREEMENT CAREFULLY BEFORE USING
+THE SOFTWARE.
 
-Access to and use of this software are granted only to licensed customers
-and partners under a valid written agreement with Yukti Tech Solution.
+This software ("Billing Software") is proprietary and confidential property of
+Yukti Tech Solution. Unauthorized copying, reverse engineering, decompilation,
+disassembly, distribution, public performance, transmission, leasing, or sale of
+this software, in whole or in part, is strictly prohibited.
 
+1. GRANT OF LICENSE
+Subject to the terms and conditions of a valid commercial agreement with Yukti
+Tech Solution, Yukti Tech Solution grants the licensee a limited, non-exclusive,
+non-transferable, and revocable license to install and execute the software
+solely on designated devices for internal business purposes.
+
+2. RESTRICTIONS
 You may not:
-- Redistribute, sublicense, or make the software publicly available.
-- Reverse engineer, decompile, or disassemble the software except where
-  required by applicable law.
-- Remove or obscure copyright, trademark, or other proprietary notices.
+- Sublicense, lease, rent, sell, assign, or distribute the software to any third party.
+- Reverse engineer, decompile, disassemble, modify, or create derivative works
+  based on the software.
+- Remove, alter, or obscure any copyright, trademark, or proprietary notice.
+- Circumvent or attempt to defeat any license verification or activation mechanisms.
 
-For licensing, purchasing, or additional permissions, contact:
-Website: https://yuktitechsolution.co.in/
-Email: yuktitechsolution@gmail.com
+3. OWNERSHIP
+Yukti Tech Solution retains all rights, title, interest, and intellectual property
+rights in and to the software, documentation, and all associated modifications,
+updates, and enhancements.
 
-If you do not have a written agreement with Yukti Tech Solution, you are
-not permitted to use this software.
+4. DISCLAIMER OF WARRANTIES & LIMITATION OF LIABILITY
+The software is provided "AS IS", without warranty of any kind, express or implied.
+In no event shall Yukti Tech Solution be liable for any direct, indirect, incidental,
+special, exemplary, or consequential damages arising from the use or inability
+to use this software.
+
+5. CONTACT & LICENSING INQUIRIES
+For commercial license acquisition, enterprise deployment, or support, please contact:
+- Organization: Yukti Tech Solution
+- Website: https://yuktitechsolution.co.in/
+- Email: yuktitechsolution@gmail.com
