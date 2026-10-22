@@ -24,7 +24,7 @@
     "react",
     "sqlite"
   ],
-  "author": "Yukti Tech Solution <yuktitechsolution@gmail.com>",
+  "author": "Vaibhav Waghalkar <vaibhavwaghalkar@gmail.com>",
   "license": "Proprietary",
   "dependencies": {
     "better-sqlite3": "^9.2.2",

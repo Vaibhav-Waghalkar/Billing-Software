@@ -9,7 +9,7 @@ export const TEST_CREDENTIALS = {
     unlimitedAccess: true
   },
   test: {
-    email: 'test@yuktitechsolution.com',
+    email: 'vaibhavwaghalkar@gmail.com',
     password: 'test123',
     role: 'user',
     unlimitedAccess: true

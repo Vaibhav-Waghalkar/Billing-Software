@@ -349,18 +349,18 @@ const addFooter = (doc, layout) => {
   doc.setTextColor(...TEXT_SECONDARY);
   const footerY = pageHeight - 10;
   
-  // "Created by Yukti Tech Solution" text
-  doc.text('Created by Yukti Tech Solution', 10, footerY);
+  // "Created by Vaibhav Waghalkar" text
+  doc.text('Created by Vaibhav Waghalkar', 10, footerY);
   
   // Add clickable link (jsPDF supports textWithLink)
   try {
     doc.setTextColor(41, 128, 185); // Blue color for link
-    doc.textWithLink('https://yuktitechsolution.co.in/', 10, footerY + 5, {
-      url: 'https://yuktitechsolution.co.in/'
+    doc.textWithLink('https://dev-vaibhav-ai.co.in/', 10, footerY + 5, {
+      url: 'https://dev-vaibhav-ai.co.in/'
     });
   } catch (error) {
     // Fallback if textWithLink is not available
-    doc.text('https://yuktitechsolution.co.in/', 10, footerY + 5);
+    doc.text('https://dev-vaibhav-ai.co.in/', 10, footerY + 5);
   }
   
   // Reset text color

@@ -1,20 +1,25 @@
-PROPRIETARY COMMERCIAL SOFTWARE LICENSE AGREEMENT
+PROPRIETARY SOFTWARE LICENSE AGREEMENT
 
-Copyright (c) 2025-2026 Yukti Tech Solution. All rights reserved.
+Copyright (c) 2025-2026 Vaibhav Waghalkar. All rights reserved.
+
+Created and authored by Vaibhav Waghalkar.
+Portfolio: https://dev-vaibhav-ai.co.in/
+Email: vaibhavwaghalkar@gmail.com
 
 IMPORTANT: PLEASE READ THIS SOFTWARE LICENSE AGREEMENT CAREFULLY BEFORE USING
 THE SOFTWARE.
 
 This software ("Billing Software") is proprietary and confidential property of
-Yukti Tech Solution. Unauthorized copying, reverse engineering, decompilation,
+Vaibhav Waghalkar. Unauthorized copying, reverse engineering, decompilation,
 disassembly, distribution, public performance, transmission, leasing, or sale of
-this software, in whole or in part, is strictly prohibited.
+this software, in whole or in part, is strictly prohibited without prior written
+permission from the author.
 
 1. GRANT OF LICENSE
-Subject to the terms and conditions of a valid commercial agreement with Yukti
-Tech Solution, Yukti Tech Solution grants the licensee a limited, non-exclusive,
-non-transferable, and revocable license to install and execute the software
-solely on designated devices for internal business purposes.
+Subject to the terms and conditions of a valid written agreement with the author,
+Vaibhav Waghalkar grants the licensee a limited, non-exclusive, non-transferable,
+and revocable license to install and execute the software solely on designated
+devices for internal business purposes.
 
 2. RESTRICTIONS
 You may not:
@@ -25,18 +30,18 @@ You may not:
 - Circumvent or attempt to defeat any license verification or activation mechanisms.
 
 3. OWNERSHIP
-Yukti Tech Solution retains all rights, title, interest, and intellectual property
+Vaibhav Waghalkar retains all rights, title, interest, and intellectual property
 rights in and to the software, documentation, and all associated modifications,
 updates, and enhancements.
 
 4. DISCLAIMER OF WARRANTIES & LIMITATION OF LIABILITY
 The software is provided "AS IS", without warranty of any kind, express or implied.
-In no event shall Yukti Tech Solution be liable for any direct, indirect, incidental,
+In no event shall the author be liable for any direct, indirect, incidental,
 special, exemplary, or consequential damages arising from the use or inability
 to use this software.
 
 5. CONTACT & LICENSING INQUIRIES
 For commercial license acquisition, enterprise deployment, or support, please contact:
-- Organization: Yukti Tech Solution
-- Website: https://yuktitechsolution.co.in/
-- Email: yuktitechsolution@gmail.com
+- Author: Vaibhav Waghalkar
+- Portfolio: https://dev-vaibhav-ai.co.in/
+- Email: vaibhavwaghalkar@gmail.com

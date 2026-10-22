@@ -1,8 +1,12 @@
 # Billing Software
 
-A complete desktop billing, GST invoicing, and inventory management software built with **Electron**, **React**, **SQLite**, and **Tailwind CSS**.
+A complete, high-performance desktop billing, GST invoicing, and inventory management application built with **Electron**, **React**, **SQLite**, and **Tailwind CSS**.
 
-> **Important:** This is proprietary software owned by **Yukti Tech Solution**. It is not open source. Access and usage are strictly limited to licensed customers and partners. For licensing or purchasing, contact [https://yuktitechsolution.co.in/](https://yuktitechsolution.co.in/) or email [yuktitechsolution@gmail.com](mailto:yuktitechsolution@gmail.com).
+Developed and created by **Vaibhav Waghalkar**.
+
+- 🌐 **Portfolio**: [https://dev-vaibhav-ai.co.in/](https://dev-vaibhav-ai.co.in/)
+- 📧 **Email**: [vaibhavwaghalkar@gmail.com](mailto:vaibhavwaghalkar@gmail.com)
+- 🐙 **GitHub**: [https://github.com/Vaibhav-Waghalkar/Billing-Software](https://github.com/Vaibhav-Waghalkar/Billing-Software)
 
 ---
 
@@ -84,8 +88,8 @@ Before installing packages, ensure the Windows SDK is present:
 ### Step 2: Clone & Install Dependencies
 ```bash
 # Clone the repository
-git clone https://github.com/Yukti-Tech-Solution/General-Billing-Software.git
-cd General-Billing-Software
+git clone https://github.com/Vaibhav-Waghalkar/Billing-Software.git
+cd Billing-Software
 
 # Install project dependencies
 npm install
@@ -117,8 +121,8 @@ The system includes preconfigured demo accounts for evaluating features:
 | Role | Email | Password | Access Level |
 |---|---|---|---|
 | **Administrator** | `vaibhavwaghalkar2@gmail.com` | `admin123` | Full Unlimited Access |
-| **Test User** | `test@yuktitechsolution.com` | `test123` | Unlimited Access |
-| **Demo Account** | `demo@demo.com` | `demo123` | Trial / Standard Access |
+| **Developer / Author** | `vaibhavwaghalkar@gmail.com` | `admin123` | Full Unlimited Access |
+| **Demo Account** | `demo@demo.com` | `demo123` | Standard Access |
 
 *Tip: Press `Ctrl + Shift + L` inside the application to toggle Administrator Mode for license management.*
 
@@ -147,7 +151,7 @@ All compiled binaries will be output to the `dist/` folder.
 ## 📂 Project Architecture
 
 ```
-billing-software/
+Billing-Software/
 ├── docs/                     # Documentation assets and screenshots
 │   └── screenshots/          # UI previews (dashboard, invoice, etc.)
 ├── electron/                 # Electron main process
@@ -206,22 +210,18 @@ The local SQLite database stores data under `%APPDATA%/billing-software/billing.
 
 ---
 
-## 📄 License
+## 📄 License & Copyright
 
-**Proprietary License** — © 2025–2026 **Yukti Tech Solution**. All rights reserved.
+Copyright (c) 2025–2026 **Vaibhav Waghalkar**. All rights reserved.
 
-Unauthorized copying, modification, reverse engineering, redistribution, or public deployment of this software is strictly prohibited without prior written agreement from Yukti Tech Solution.
-
-See [LICENSE.txt](file:///d:/Programming/Yukti%20Tech%20Solution/Billing%20Software/LICENSE.txt) for full terms.
+Created and authored by **Vaibhav Waghalkar**.
+See [LICENSE.txt](LICENSE.txt) for full terms.
 
 ---
 
-## 📞 Support & Inquiries
+## 📞 Author & Contact
 
-- **Official Website**: [https://yuktitechsolution.co.in/](https://yuktitechsolution.co.in/)
-- **Email Contact**: [yuktitechsolution@gmail.com](mailto:yuktitechsolution@gmail.com)
-- **Documentation Guides**:
-  - [ENV_SETUP.md](file:///d:/Programming/Yukti%20Tech%20Solution/Billing%20Software/ENV_SETUP.md) — Firebase configuration guide
-  - [QUICK_START.md](file:///d:/Programming/Yukti%20Tech%20Solution/Billing%20Software/QUICK_START.md) — 5-minute setup walkthrough
-  - [TROUBLESHOOTING.md](file:///d:/Programming/Yukti%20Tech%20Solution/Billing%20Software/TROUBLESHOOTING.md) — Resolving build and runtime issues
-  - [FIREBASE_SETUP.md](file:///d:/Programming/Yukti%20Tech%20Solution/Billing%20Software/FIREBASE_SETUP.md) — Cloud licensing and sync setup
+- **Author**: Vaibhav Waghalkar
+- **Portfolio**: [https://dev-vaibhav-ai.co.in/](https://dev-vaibhav-ai.co.in/)
+- **Email**: [vaibhavwaghalkar@gmail.com](mailto:vaibhavwaghalkar@gmail.com)
+- **Repository**: [https://github.com/Vaibhav-Waghalkar/Billing-Software](https://github.com/Vaibhav-Waghalkar/Billing-Software)

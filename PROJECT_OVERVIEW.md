@@ -859,8 +859,9 @@ See `TROUBLESHOOTING.md` for detailed solutions.
 ## 🔄 Version Information
 
 - **Current Version:** 1.0.0
-- **License:** Proprietary (Yukti Tech Solution - contact yuktitechsolution@gmail.com)
-- **Author:** Yukti Tech Solution <yuktitechsolution@gmail.com>
+- **License:** Proprietary (Vaibhav Waghalkar - contact vaibhavwaghalkar@gmail.com)
+- **Author:** Vaibhav Waghalkar <vaibhavwaghalkar@gmail.com>
+- **Portfolio:** https://dev-vaibhav-ai.co.in/
 
 ---
 
@@ -890,5 +891,5 @@ For issues or questions:
 ---
 
 **Last Updated:** Generated on project scan
-**Project Path:** E:\Programming\Yukti Tech Solution\Billing Software
+**Project Path:** Billing Software
 

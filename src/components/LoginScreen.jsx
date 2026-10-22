@@ -112,8 +112,8 @@ const LoginScreen = ({ onLogin }) => {
                 <p className="text-gray-600">Password: admin123</p>
               </div>
               <div className="border-b pb-2">
-                <p className="font-semibold text-gray-700">Test Account:</p>
-                <p className="text-gray-600">Email: test@yuktitechsolution.com</p>
+                <p className="font-semibold text-gray-700">Developer Account:</p>
+                <p className="text-gray-600">Email: vaibhavwaghalkar@gmail.com</p>
                 <p className="text-gray-600">Password: test123</p>
               </div>
               <div>
@@ -130,7 +130,7 @@ const LoginScreen = ({ onLogin }) => {
 
         {/* Footer */}
         <div className="mt-8 text-center text-xs text-gray-500">
-          <p>© 2024 Yukti Tech Solution</p>
+          <p>© 2025–2026 Vaibhav Waghalkar</p>
           <p className="mt-1">For testing purposes only</p>
         </div>
       </div>

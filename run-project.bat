@@ -9,7 +9,7 @@ pushd "%SCRIPT_DIR%" >nul
 
 echo.
 echo =====================================================
-echo   Billing Software - Setup and Run (Yukti Tech Solution)
+echo   Billing Software - Setup and Run (by Vaibhav Waghalkar)
 echo =====================================================
 echo.
 

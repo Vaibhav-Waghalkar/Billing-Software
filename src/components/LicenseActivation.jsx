@@ -77,7 +77,7 @@ const LicenseActivation = ({ status, license, onActivated }) => {
         </div>
 
         <div className="mt-6 text-center text-sm text-gray-600">
-          <p>Contact: contact@yuktitechsolution.co.in</p>
+          <p>Contact: vaibhavwaghalkar@gmail.com</p>
           <p>For license purchase or renewal</p>
         </div>
       </div>
